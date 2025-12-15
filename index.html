@@ -1,16 +1,21 @@
 <!-- filename: index.html -->
 <!DOCTYPE html>
 <html lang="en">
-<html>
 <head>
-  <title>Halal Horizons — W3.CSS Image Gallery</title>
-  <meta charset="UTF-8">
+  <meta charset="utf-8">
+  <title>Halal Horizons Gallery</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <!-- W3.CSS + optional font/icons (framework only, no custom CSS) -->
+  <!-- W3.CSS + optional font/icons -->
   <link rel="stylesheet" href="https://www.w3schools.com/w3css/5/w3.css">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <style>
+    body { font-family: "Raleway", sans-serif; }
+    .w3-card-4 img { display: block; width: 100%; height: auto; }
+    .w3-opacity { margin-top: 4px; }
+  </style>
 </head>
 <body class="w3-light-grey">
 
@@ -20,14 +25,14 @@
     <p class="w3-opacity">Destinations • Dining • Activities</p>
   </header>
 
-  <!-- Main Gallery (unique taxonomy ID) -->
+  <!-- Main Gallery -->
   <section id="gallery-main" class="w3-content" style="max-width:1200px">
-
     <div class="w3-row">
+
       <!-- Card 1 -->
       <div class="w3-col s12 m6 l4 w3-padding">
         <div class="w3-card-4 category-destination region-europe">
-          <img src="images/paris.jpg" alt="Paris skyline at sunset" style="width:100%">
+          <img src="images/paris.jpg" alt="Paris skyline at sunset">
           <div class="w3-container">
             <h3>Paris</h3>
             <p class="w3-opacity">Destination • Europe</p>
@@ -35,132 +40,10 @@
         </div>
       </div>
 
-      <!-- Card 2 -->
-      <div class="w3-col s12 m6 l4 w3-padding">
-        <div class="w3-card-4 experience-dining halal-certified">
-          <img src="images/kebab.jpg" alt="Halal kebab plate" style="width:100%">
-          <div class="w3-container">
-            <h3>Halal Kebab</h3>
-            <p class="w3-opacity">Dining • Certified</p>
-          </div>
-        </div>
-      </div>
+      <!-- Add more cards here as needed -->
 
-      <!-- Card 3 -->
-      <div class="w3-col s12 m6 l4 w3-padding">
-        <div class="w3-card-4 experience-activity family-friendly">
-          <img src="images/park.jpg" alt="Family-friendly city park" style="width:100%">
-          <div class="w3-container">
-            <h3>City Park</h3>
-            <p class="w3-opacity">Activity • Family</p>
-          </div>
-        </div>
-      </div>
-
-      <!-- Card 4 -->
-      <div class="w3-col s12 m6 l4 w3-padding">
-        <div class="w3-card-4 category-destination region-asia">
-          <img src="images/dubai.jpg" alt="Dubai skyline" style="width:100%">
-          <div class="w3-container">
-            <h3>Dubai</h3>
-            <p class="w3-opacity">Destination • Asia</p>
-          </div>
-        </div>
-      </div>
-
-      <!-- Card 5 -->
-      <div class="w3-col s12 m6 l4 w3-padding">
-        <div class="w3-card-4 experience-dining street-food">
-          <img src="images/streetfood.jpg" alt="Street food stall" style="width:100%">
-          <div class="w3-container">
-            <h3>Street Food</h3>
-            <p class="w3-opacity">Dining • Casual</p>
-          </div>
-        </div>
-      </div>
-
-      <!-- Card 6 -->
-      <div class="w3-col s12 m6 l4 w3-padding">
-        <div class="w3-card-4 experience-activity outdoor">
-          <img src="images/beach.jpg" alt="Beach day scene" style="width:100%">
-          <div class="w3-container">
-            <h3>Beach Day</h3>
-            <p class="w3-opacity">Activity • Outdoor</p>
-          </div>
-        </div>
-      </div>
-
-      <!-- Card 7 -->
-      <div class="w3-col s12 m6 l4 w3-padding">
-        <div class="w3-card-4 category-destination region-northamerica">
-          <img src="images/nyc.jpg" alt="New York skyline" style="width:100%">
-          <div class="w3-container">
-            <h3>New York</h3>
-            <p class="w3-opacity">Destination • North America</p>
-          </div>
-        </div>
-      </div>
-
-      <!-- Card 8 -->
-      <div class="w3-col s12 m6 l4 w3-padding">
-        <div class="w3-card-4 experience-dining halal-certified">
-          <img src="images/biryani.jpg" alt="Halal biryani dish" style="width:100%">
-          <div class="w3-container">
-            <h3>Biryani House</h3>
-            <p class="w3-opacity">Dining • Certified</p>
-          </div>
-        </div>
-      </div>
-
-      <!-- Card 9 -->
-      <div class="w3-col s12 m6 l4 w3-padding">
-        <div class="w3-card-4 experience-activity budget-friendly">
-          <img src="images/museum.jpg" alt="City museum entrance" style="width:100%">
-          <div class="w3-container">
-            <h3>City Museum</h3>
-            <p class="w3-opacity">Activity • Budget</p>
-          </div>
-        </div>
-      </div>
-
-      <!-- Card 10 -->
-      <div class="w3-col s12 m6 l4 w3-padding">
-        <div class="w3-card-4 category-destination region-africa">
-          <img src="images/cairo.jpg" alt="Cairo cityscape" style="width:100%">
-          <div class="w3-container">
-            <h3>Cairo</h3>
-            <p class="w3-opacity">Destination • Africa</p>
-          </div>
-        </div>
-      </div>
-
-      <!-- Card 11 -->
-      <div class="w3-col s12 m6 l4 w3-padding">
-        <div class="w3-card-4 experience-dining family-friendly">
-          <img src="images/dessert.jpg" alt="Dessert bar selection" style="width:100%">
-          <div class="w3-container">
-            <h3>Dessert Bar</h3>
-            <p class="w3-opacity">Dining • Family</p>
-          </div>
-        </div>
-      </div>
-
-      <!-- Card 12 -->
-      <div class="w3-col s12 m6 l4 w3-padding">
-        <div class="w3-card-4 experience-activity outdoor">
-          <img src="images/hiking.jpg" alt="Hiking trail outlook" style="width:100%">
-          <div class="w3-container">
-            <h3>Hiking Trail</h3>
-            <p class="w3-opacity">Activity • Outdoor</p>
-          </div>
-        </div>
-      </div>
     </div>
   </section>
 
-  <!-- Footer -->
-  <footer class="w3-container w3-center w3-opacity w3-margin-top">
-    <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank" class="w3-hover-text-green">w3.css</a></p>
-  </footer>
 </body>
 </html>
