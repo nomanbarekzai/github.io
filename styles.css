@@ -3,15 +3,15 @@
 /* Reset + theme */
 * { box-sizing: border-box; }
 :root {
-  --bg: #0f172a;        /* page background */
-  --surface: #111827;   /* header/footer surface */
-  --text: #f8fafc;      /* body text */
-  --muted: #cbd5e1;     /* secondary text */
-  --card: #1f2937;      /* card surface */
-  --border: #334155;    /* borders */
-  --primary: #38bdf8;   /* accent links */
-  --accent: #a78bfa;    /* accent gradient */
-  --focus: #ffbf47;     /* high-contrast focus ring */
+  --bg: #0f172a;
+  --surface: #111827;
+  --text: #f8fafc;
+  --muted: #cbd5e1;
+  --card: #1f2937;
+  --border: #334155;
+  --primary: #38bdf8;
+  --accent: #a78bfa;
+  --focus: #ffbf47;
 }
 html { scroll-behavior: smooth; }
 body {
@@ -35,7 +35,7 @@ body {
   align-items: center;
   justify-content: space-between;
   gap: 16px;
-  padding: 18px 0;
+  padding: 18px 16px;
   border-bottom: 1px solid var(--border);
   background: linear-gradient(180deg, rgba(255,255,255,0.04), rgba(0,0,0,0.12)), var(--surface);
   border-radius: 12px;
@@ -54,7 +54,7 @@ body {
 }
 .actions a:hover { border-color: var(--primary); }
 
-/* Section */
+/* Sections */
 .section { margin-top: 28px; }
 .section h2 {
   margin: 0 0 12px;
