@@ -5,45 +5,152 @@
   <meta charset="utf-8">
   <title>Halal Horizons Gallery</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
-
-  <!-- W3.CSS + optional font/icons -->
-  <link rel="stylesheet" href="https://www.w3schools.com/w3css/5/w3.css">
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
-  <style>
-    body { font-family: "Raleway", sans-serif; }
-    .w3-card-4 img { display: block; width: 100%; height: auto; }
-    .w3-opacity { margin-top: 4px; }
-  </style>
+  <!-- Optional: W3.CSS if you used it before -->
+  <!-- <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css"> -->
+  <link rel="stylesheet" href="styles.css">
 </head>
-<body class="w3-light-grey">
-
-  <!-- Header -->
-  <header class="w3-container w3-center w3-padding-32">
-    <h1 class="w3-xxlarge">Halal Horizons Gallery</h1>
-    <p class="w3-opacity">Destinations • Dining • Activities</p>
-  </header>
-
-  <!-- Main Gallery -->
-  <section id="gallery-main" class="w3-content" style="max-width:1200px">
-    <div class="w3-row">
-
-      <!-- Card 1 -->
-      <div class="w3-col s12 m6 l4 w3-padding">
-        <div class="w3-card-4 category-destination region-europe">
-          <img src="images/paris.jpg" alt="Paris skyline at sunset">
-          <div class="w3-container">
-            <h3>Paris</h3>
-            <p class="w3-opacity">Destination • Europe</p>
-          </div>
-        </div>
+<body>
+  <div class="container">
+    <header class="header">
+      <div class="brand">
+        <img src="Images/logo.png" alt="Halal Horizons logo">
+        <h1>Halal Horizons Gallery</h1>
       </div>
+      <nav class="actions" aria-label="Section links">
+        <a href="#destinations">Destinations</a>
+        <a href="#dining">Dining</a>
+        <a href="#activities">Activities</a>
+      </nav>
+    </header>
 
-      <!-- Add more cards here as needed -->
+    <section id="destinations" class="section">
+      <h2>Destinations</h2>
+      <div class="gallery">
+        <article class="card">
+          <div class="thumb">
+            <img src="Images/paris.jpg" alt="Paris skyline at sunset">
+          </div>
+          <div class="content">
+            <h3 class="title">Paris</h3>
+            <p class="meta">Destination • Europe</p>
+            <span class="badge">Popular</span>
+          </div>
+        </article>
 
-    </div>
-  </section>
+        <article class="card">
+          <div class="thumb">
+            <img src="Images/dubai.jpg" alt="Dubai skyline">
+          </div>
+          <div class="content">
+            <h3 class="title">Dubai</h3>
+            <p class="meta">Destination • Asia</p>
+            <span class="badge">Trending</span>
+          </div>
+        </article>
 
+        <article class="card">
+          <div class="thumb">
+            <img src="Images/newyork.jpg" alt="New York skyline">
+          </div>
+          <div class="content">
+            <h3 class="title">New York</h3>
+            <p class="meta">Destination • North America</p>
+            <span class="badge">Classic</span>
+          </div>
+        </article>
+
+        <article class="card">
+          <div class="thumb">
+            <img src="Images/cairo.jpg" alt="Cairo cityscape">
+          </div>
+          <div class="content">
+            <h3 class="title">Cairo</h3>
+            <p class="meta">Destination • Africa</p>
+            <span class="badge">Historic</span>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section id="dining" class="section">
+      <h2>Dining</h2>
+      <div class="gallery">
+        <article class="card">
+          <div class="thumb"><img src="Images/kebab.jpg" alt="Halal kebab plate"></div>
+          <div class="content">
+            <h3 class="title">Halal Kebab</h3>
+            <p class="meta">Dining • Certified</p>
+            <span class="badge">Family‑friendly</span>
+          </div>
+        </article>
+        <article class="card">
+          <div class="thumb"><img src="Images/streetfood.jpg" alt="Street food stall"></div>
+          <div class="content">
+            <h3 class="title">Street Food</h3>
+            <p class="meta">Dining • Casual</p>
+            <span class="badge">Budget</span>
+          </div>
+        </article>
+        <article class="card">
+          <div class="thumb"><img src="Images/biryani.jpg" alt="Halal biryani dish"></div>
+          <div class="content">
+            <h3 class="title">Biryani House</h3>
+            <p class="meta">Dining • Certified</p>
+            <span class="badge">Popular</span>
+          </div>
+        </article>
+        <article class="card">
+          <div class="thumb"><img src="Images/desserts.jpg" alt="Dessert bar selection"></div>
+          <div class="content">
+            <h3 class="title">Dessert Bar</h3>
+            <p class="meta">Dining • Family</p>
+            <span class="badge">Sweet</span>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section id="activities" class="section">
+      <h2>Activities</h2>
+      <div class="gallery">
+        <article class="card">
+          <div class="thumb"><img src="Images/park.jpg" alt="Family-friendly city park"></div>
+          <div class="content">
+            <h3 class="title">City Park</h3>
+            <p class="meta">Activity • Family</p>
+            <span class="badge">Relax</span>
+          </div>
+        </article>
+        <article class="card">
+          <div class="thumb"><img src="Images/beach.jpg" alt="Beach day scene"></div>
+          <div class="content">
+            <h3 class="title">Beach Day</h3>
+            <p class="meta">Activity • Outdoor</p>
+            <span class="badge">Sun</span>
+          </div>
+        </article>
+        <article class="card">
+          <div class="thumb"><img src="Images/museum.jpg" alt="City museum entrance"></div>
+          <div class="content">
+            <h3 class="title">City Museum</h3>
+            <p class="meta">Activity • Budget</p>
+            <span class="badge">Culture</span>
+          </div>
+        </article>
+        <article class="card">
+          <div class="thumb"><img src="Images/hiking.jpg" alt="Hiking trail outlook"></div>
+          <div class="content">
+            <h3 class="title">Hiking Trail</h3>
+            <p class="meta">Activity • Outdoor</p>
+            <span class="badge">Adventure</span>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <p>© 2025 Halal Horizons</p>
+    </footer>
+  </div>
 </body>
 </html>
