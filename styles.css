@@ -1,6 +1,7 @@
-/* styles.css */
-:root { color-scheme: light dark; }
-body { margin: 0; font-family: system-ui, Arial, sans-serif; line-height: 1.6; background: #ffffff; color: #111111; }
-a { color: #0645AD; }
-a:focus, button:focus { outline: 3px solid #ffbf47; outline-offset: 2px; }
-nav a { padding: 8px 12px; display: inline-block; }
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 16px;
+}
+.card { background:#fff; border:1px solid #ddd; padding:12px; }
+.card img { width:100%; height:auto; display:block; }
